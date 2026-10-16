@@ -1,0 +1,27 @@
+GET Http:localhost:5000/Users
+
+###
+GET Http:localhost:5000/Users/1
+
+####
+POST  Http:localhost:5000/Users
+Content-Type: application/json
+
+{
+    "name": "john",
+    "email": "john@gmail.com",
+    "gender": "male"
+}
+
+###
+PATCH   Http:localhost:5000/Users/1
+Content-Type: application/json
+
+{
+    "name": "ikan",
+    "email": "ikan@gmail.com",
+    "gender": "male"
+}
+
+###
+DELETE Http:localhost:5000/Users/2
